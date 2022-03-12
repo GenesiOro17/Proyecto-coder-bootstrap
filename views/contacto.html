@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../assets/Multimedia/lyg pequeño.png">
+    <title>Contacto</title>
+</head>
+<body>
+  <header class="header">
+    <nav >
+      <div class="nav1">
+        <a href="./index.html"><img  src="../assets/Multimedia/lyg grande.png" alt=""width="70px"></a> 
+      </div>
+        <ul class="nav2">
+          <li> <a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#nosotros">Nosotros</a></li>
+          <li> <a href="../index.html#nuestrosTrabajos">Nuestros trabajos</a> </li>
+          <li> <a href="./servicios.html">Servicios</a>
+           <ul>
+             <li><a href="../views/servicios.html#servicio1">Servicio 1</a></li>
+             <li><a href="../views/servicios.html#servicio2"> Servicio 2</a></li>
+             <li><a href="../views/servicios.html#servicio3"> Servicio 3</a></li>
+             <li><a href="../views/servicios.html#servicio4"> Servicio 4</a></li>
+           </ul>
+          </li>
+          <li> <a href="./contacto.html">Contacto</a></li>
+        </ul> 
+          
+    </nav>
+</header>
+  <!-- <header>
+    <nav>
+     <a href="../index.html"><img class="nav1" src="../assets/Multimedia/lyg grande.png" alt="LOGO" width="70px"></a> 
+      <ul class="nav2">
+        <li> <a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li> <a href="../index.html#nuestrosTrabajos">Nuestros trabajos</a> </li>
+        <li> <a href="./servicios.html">Servicios</a>
+         <ul>
+            <li><a href="../views/servicios.html#servicio1">Servicio 1</a></li>
+            <li><a href="../views/servicios.html#servicio2"> Servicio 2</a></li>
+            <li><a href="../views/servicios.html#servicio3"> Servicio 3</a></li>
+            <li><a href="../views/servicios.html#servicio4"> Servicio 4</a></li>
+          </ul>
+        </li>
+        <li> <a href="./contacto.html">Contacto</a></li>
+      </ul> 
+          
+    </nav>
+  </header> -->
+  <main>
+    <section class="contacto">
+     <h1>Contacto</h1>
+     <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ut harum cumque enim necessitatibus consequuntur voluptatum ducimus nostrum ex possimus!</h3>
+     <form action="">
+       <legend>Formulario</legend>
+       <div>
+          <label for="Nombre">Nombre *</label>
+          <input type="Nombre" name="nombre" id="nombre" placeholder="Maria">
+        </div>
+
+        <div>
+          <label for="Apellido">Apellido *</label>
+          <input type="Apellido" id="Apellido" placeholder="Suarez">
+        </div>
+        
+       <div>
+         <label for="email">Email*</label>
+          <input type="email" name="email" id="email" placeholder="tumail@gmail.com" required>
+        </div>
+        
+        <div>
+          <label for="Ciudad">Ciudad *</label> 
+          <input type="text" name="text" placeholder="Lima" required>
+        </div>
+        
+        <div>
+         <label for="sexo">Sexo</label>
+          <select name="sexo" id="sexo">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </div>
+        
+        <div>
+         <label for="comentario">¿Qué te pareció nuestro contenido?</label>
+          <br>
+         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input">
+        
+          <input type="submit" value="Enviar" class="enviar" >
+          <input type="reset" value="Borrar" class="borrar" >
+       </div>
+      </form>
+
+    </section>
+    
+  </main>
+</body>
+</html>

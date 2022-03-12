@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: center;
+  background-color: #ffbfaf;
+}
+
+/* BARRA DE NAVEGACION */
+nav {
+  background-color: #fffff2;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 100%;
+  grid-template-areas: "nav1 nav2 nav2";
+  gap: 10%;
+}
+.nav1 {
+  grid-area: nav1;
+  padding-left: 40px;
+  padding-top: 10px;
+  justify-content: start;
+  width: 100px;
+}
+.nav2 {
+  grid-area: nav2;
+  gap: 20px;
+}
+.titulo2 {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul a {
+  color: black;
+  text-decoration: none;
+  margin: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+nav ul a:hover {
+  color: #ff6961;
+  font-weight: bold;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+}
+ul li:hover ul {
+  display: block;
+  background-color: rgb(255, 250, 250);
+}
+/* FUENTES */
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 6rem;
+  color: #ffffff;
+  padding: 2rem;
+}
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 3.5rem;
+  color: #fdfdfd;
+  margin-top: 1rem;
+}
+h3 {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  color: #771212;
+  text-decoration: solid;
+}
+p {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+}
+
+/* ENCABEZADO */
+.titulo {
+  background-image: url(https://estaticos-cdn.prensaiberica.es/clip/9ecbab62-23a9-4ad8-8f7a-e643dddd0324_16-9-aspect-ratio_default_0.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  height: 30rem;
+  justify-content: center;
+}
+.titulo h1 {
+  color: black;
+}
+
+.encabezado {
+  padding: 2rem;
+}
+
+/* CARROUSEL-MAIN */
+.imagenes1 {
+  display: flex;
+  justify-content: center;
+  background-color: #c63637;
+  height: 200px;
+  padding: 2rem;
+}
+
+/* QUIENES SOMOS */
+.sec1 {
+  display: flex;
+  text-align: center;
+  margin: 2rem 4rem;
+  justify-content: space-around;
+}
+.nosotros {
+  width: 40%;
+  text-align: center;
+  background-color: #ff6961;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.imagenes2 {
+  width: 500px;
+  height: 250px;
+}
+
+/* QUE NOS DIFERENCIA */
+.sec2 {
+  display: block;
+  justify-content: center;
+  background-color: #ff6961;
+  height: 430px;
+  padding: 1rem;
+  margin: 20px auto;
+}
+.diferencias {
+  display: flex;
+  justify-content: space-around;
+  margin: 0rem;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  color: #000000;
+  font-size: 2rem;
+
+  animation-duration: 2s;
+}
+.diferencias img {
+  width: 150px;
+  height: 150px;
+  border: none;
+  padding-top: 30px;
+}
+
+/* SERVICIOS */
+table {
+  display: flex;
+  text-align: center;
+  margin: 1rem 7rem;
+  justify-content: center;
+  padding: 1rem;
+  border-spacing: 4rem;
+}
+td img {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed black;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+.ser2 {
+  display: none;
+}
+
+/* NUESTROS TRABAJOS */
+.sec3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+.trabajos img {
+  width: 300px;
+  height: 400px;
+  margin: 1.6rem 1.6rem;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+.trabajos img:hover {
+  opacity: 2;
+  border: solid white;
+}
+
+.trabajos img:hover {
+  opacity: 2;
+  border: solid white;
+}
+
+/* CONTACTO */
+form {
+  width: 40%;
+  display: inline-block;
+  padding: 1rem 10px;
+  border: #e2504c 6px groove;
+  border-radius: 30px;
+  margin-top: 3rem;
+}
+.input {
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+form div {
+  margin: 40px;
+  font-family: "Caveat", cursive;
+  font-size: 1.4rem;
+}
+form legend {
+  font-family: "Caveat", cursive;
+  font-size: 1.4rem;
+  font-size: 3rem;
+}
+
+.boton {
+  border-radius: 1px rgb(161, 56, 73) solid;
+  background-color: #fdfdfd;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  background-color: #c63637;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 7rem;
+}
+footer div img {
+  width: 60px;
+  margin: 1rem 1rem;
+}
+footer h3 {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+/* MEDIA QUERRIES TABLET */
+@media screen and (max-width: 1200px) {
+  /* FUENTES */
+  h1 {
+    font-size: 4.5rem;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+  }
+  /* NAVEGACION */
+  nav {
+    background-color: #fffff2;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(2, 40%);
+    grid-template-areas:
+      "nav1"
+      "nav2";
+    gap: 25px;
+    justify-items: center;
+    padding: 20px;
+  }
+  .nav2 {
+    grid-area: nav2;
+    margin: 5px;
+    font-size: 17px;
+    flex-wrap: wrap;
+  }
+  nav ul a {
+    margin: 8px;
+  }
+  /* ENCABEZADO */
+  .titulo {
+    background-repeat: repeat;
+    width: 100%;
+    padding: 40px;
+  }
+  .titulo h1 {
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    text-align: center;
+  }
+  .imagenes1 {
+    display: flex;
+    justify-content: center;
+    background-color: #c63637;
+    height: 200px;
+    padding: 6%;
+  }
+  /* QUIENES SOMOS */
+  .sec1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nosotros {
+    width: 100%;
+    text-align: center;
+    background-color: #ff918b;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .imagenes2 {
+    width: 400px;
+    height: 250px;
+    margin-top: 30px;
+  }
+  /* QUE NOS DIFERENCIA */
+  .sec2 {
+    display: block;
+    justify-content: center;
+    background-color: #ff6961;
+    height: auto;
+    padding: 1rem;
+    margin: 4% auto;
+  }
+  .diferencias {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .diferencias img {
+    width: 200px;
+    height: 230px;
+    border: none;
+    padding-top: 50px;
+  }
+
+  /* NUESTROS TRABAJOS */
+  .sec3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "cero uno "
+      "dos tres"
+      "cuatro cinco"
+      "seis siete"
+      "ocho ocho";
+    justify-items: center;
+  }
+  .cero {
+    grid-area: cero;
+  }
+  .uno {
+    grid-area: uno;
+  }
+  .dos {
+    grid-area: dos;
+  }
+  .tres {
+    grid-area: tres;
+  }
+  .cuatro {
+    grid-area: cuatro;
+  }
+  .cinco {
+    grid-area: cinco;
+  }
+  .seis {
+    grid-area: seis;
+  }
+  .siete {
+    grid-area: siete;
+  }
+  .ocho {
+    grid-area: ocho;
+  }
+  .trabajos img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  .logo-footer {
+    width: 95px;
+    margin-bottom: 5px;
+  }
+  /* SERVICIOS */
+  table {
+    text-align: center;
+    justify-content: center;
+    border-spacing: 35px;
+  }
+  table tr td .text {
+    display: none;
+  }
+  .ser2 {
+    display: flex;
+    background-color: #fffff2;
+    padding: 30px;
+  }
+  .ser1 {
+    display: none;
+  }
+  td img {
+    width: 250px;
+    height: 150px;
+    border: 2px dashed black;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+  }
+
+  /* CONTACTO */
+  form {
+    width: 80%;
+    display: inline-block;
+    padding: 0.5rem 10px;
+    border: #e2504c 6px groove;
+    border-radius: 30px;
+    margin-top: 3rem;
+  }
+  .contacto h3 {
+    font-size: 20px;
+  }
+  form div {
+    margin: 40px;
+    font-family: "Caveat", cursive;
+    font-size: 1.2rem;
+  }
+  .input {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 25px;
+    grid-template-areas: "enviar borrar";
+    table-layout: fixed;
+    justify-items: center;
+  }
+  .enviar {
+    grid-area: enviar;
+  }
+  .borrar {
+    grid-area: borrar;
+  }
+}
+
+/* MEDIA QUERRIES MOBILE */
+@media screen and (max-width: 550px) {
+  body {
+    width: 100%;
+  }
+  /* FUENTES */
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  /* NAVEGACION */
+  header {
+    width: 100%;
+  }
+
+  nav {
+    background-color: #fffff2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 30%);
+    grid-template-areas:
+      "nav1"
+      "nav2";
+    gap: 25px;
+    justify-items: center;
+
+    padding: 10px;
+  }
+  .nav1 {
+    padding-left: 20px;
+  }
+  .nav2 {
+    font-size: 17.5px;
+    justify-content: center;
+  }
+  nav ul a {
+    margin: 3px;
+  }
+
+  /* ENCABEZADO */
+  .titulo {
+    background-position: 35%;
+  }
+  .titulo h1 {
+    text-align: start;
+    padding: 0;
+    font-size: 50px;
+  }
+
+  /* CARROUSEL-MAIN */
+  .imagenes1 {
+    display: flex;
+    justify-content: center;
+    background-color: #c63637;
+    height: 200px;
+    padding: 2rem;
+  }
+
+  /* QUIENES SOMOS */
+  .sec1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+  .nosotros {
+    width: 100%;
+    text-align: center;
+    background-color: #ff6961;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .imagenes2 {
+    width: 100%;
+    height: 8%;
+  }
+
+  /* NUESTROS TRABAJOS */
+
+  .trabajos img {
+    width: 150px;
+    height: 250px;
+  }
+
+  /* FOOTER */
+  footer h3 {
+    font-size: 2rem;
+  }
+
+  /* SERVICIOS */
+  table {
+    width: 55%;
+    text-align: center;
+    justify-content: center;
+    border-spacing: 10px;
+    padding-right: 10px;
+  }
+
+  .ser2 {
+    width: 85%;
+    justify-content: center;
+  }
+  td img {
+    width: 230px;
+    height: 130px;
+    border: 2px dashed black;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+
+  /* CONTACTO */
+  form {
+    width: 90%;
+    display: inline-block;
+    padding: 0.5rem 10px;
+    border: #e2504c 6px groove;
+    border-radius: 30px;
+    margin-top: 3rem;
+  }
+
+  form div {
+    margin: 40px;
+    font-family: "Caveat", cursive;
+    font-size: 1.2rem;
+  }
+  textarea {
+    width: 100%;
+    height: ;
+  }
+  .input {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 25px;
+    grid-template-areas: "enviar borrar";
+    justify-items: center;
+  }
+  .enviar {
+    grid-area: enviar;
+  }
+  .borrar {
+    grid-area: borrar;
+  }
+}
